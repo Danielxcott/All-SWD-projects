@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2"> -->
+</head>
+<body>
+    <section class="main container-fluid">
+        <div class="row">
+                            <!-- navbar -->
+            <div class="col-12 col-lg-3 col-xl-2 vh-100 aside">
+                <div class=" py-3 mt-3 d-flex justify-content-between align-items-center brand-logo">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span><i class="feather-moon bg-secondary rounded-circle h4"></i></span>
+                        <span style="margin-left: 5px;">
+                            <p class="mb-0 h4">MOON</p>
+                        </span>
+                    </div>
+                    <button class="close-btn btn btn-light d-block d-lg-none">
+                        <i class="feather-x text-secondary"></i>
+                    </button>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li class="nav-item">
+                           <a href="dashboard.html" class="nav-item-link active">
+                               <span>
+                                <i class="feather-home"></i>
+                                Dashboard
+                               </span>
+                           </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                            <a class="nav-item-link">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item Link
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                            <!-- navbar -->
+            <div class="col-12 col-lg-9 col-xl-10 vh-100 py-3 content">
+                <div class="row header mb-4">
+                    <div class="col-12 ">
+                        <div class="p-2 bg-primary rounded d-flex justify-content-between align-item-center">
+                            <button class="show-btn btn btn-primary btn-link d-block d-lg-none">
+                                <i class="feather-menu text-light"></i>
+                            </button>
+                            <form action="" method="post" class="d-none d-lg-inline" style="margin-block: auto;">
+                                <div class="form d-flex">
+                                    <input type="text" class="form-control"  id="">
+                                    <button class="btn btn-light btn-search">
+                                        <i class="feather-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/user/avatar2.jpg" alt="" class="user-img">
+                                        Diana
+                                    </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-start -->
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 mb-4">
+                        <div class="card  status-card" onclick="go('items-list.html')">
+                            <div class="card-body">
+                                <div class="row align-items-center ">
+                                    <div class="col-4">
+                                        <i class="feather-shopping-bag h2"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-2 h2 fw-bolder"><span class="counter-up">123</span></p>
+                                        <p class="mb-0 text-black-50">Today order</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 mb-4">
+                        <div class="card status-card">
+                            <div class="card-body">
+                                <div class="row align-items-center ">
+                                    <div class="col-4">
+                                        <i class="feather-users h2"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-2 h2 fw-bolder"><span class="counter-up">340</span></p>
+                                        <p class="mb-0 text-black-50">Total User</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 mb-4 ">
+                        <div class="card status-card">
+                            <div class="card-body">
+                                <div class="row align-items-center ">
+                                    <div class="col-4">
+                                        <i class="feather-package h2"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-2 h2 fw-bolder"><span class="counter-up">323</span></p>
+                                        <p class="mb-0 text-black-50">Total items</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 mb-4 ">
+                        <div class="card status-card">
+                            <div class="card-body">
+                                <div class="row align-items-center ">
+                                    <div class="col-4">
+                                        <i class="feather-navigation h2"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-2 h2 fw-bolder"><span class="counter-up">14</span></p>
+                                        <p class="mb-0 text-black-50">Location</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-end">
+                    <div class="col-12 mb-4 col-xl-7 mb-xl-4">
+                        <div class="card shadow-sm overflow-hidden">
+                            <div class="">
+                                <div class="d-flex justify-content-lg-between align-items-center p-4">
+                                    <h4 class="ov">Order and Viewer</h4>
+                                    <div class="text-center">
+                                        <img src="img/user/avatar3.jpg" class="user-img user-img-2" alt="">
+                                        <img src="img/user/avatar4.jpg" class="user-img user-img-2" alt="">
+                                        <img src="img/user/avatar5.jpg" class="user-img user-img-2" alt="">
+                                        <img src="img/user/avatar6.jpg" class="user-img user-img-2" alt="">
+                                        <img src="img/user/avatar7.jpg" class="user-img user-img-2" alt="">
+
+                                    </div>
+                                </div>
+                                <canvas id="ov" height="150"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-5 col-md-6 mb-4 mb-xl-4 img-scroll">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div id="carouselExampleIndicators" class="carousel item-carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators" style="bottom: -10px; margin-bottom: 0;">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-secondary"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-secondary"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3" class="bg-secondary"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3" class="bg-secondary"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <div class="item-card ">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                             <div>
+                                                <h4 class="mb-2 fw-bolder" style="margin-top: -100px;">House Plant</h4>
+                                                <p class="mb-2 text-black-50">23000 MMK</p>
+                                                <div class="progress" style="width:200px;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                                  </div>
+                                            </div>
+                                                <img src="img/items/item1.png" class="item-img item-img1" alt="">
+                                            </div>
+                                        </div>                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="item-card ">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                             <div>
+                                                <h4 class="mb-2 fw-bolder" style="margin-top: -100px;">House Plant</h4>
+                                                <p class="mb-2 text-black-50">70000 MMK</p>
+                                                <div class="progress" style="width:200px;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 89%"></div>
+                                                  </div>
+                                            </div>
+                                                <img src="img/items/item2.png" class="item-img item-img2" alt="">
+                                            </div>
+                                        </div>                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="item-card ">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                             <div>
+                                                <h4 class="mb-2 fw-bolder" style="margin-top: -100px;">House Plant</h4>
+                                                <p class="mb-2 text-black-50">30000 MMK</p>
+                                                <div class="progress" style="width:200px;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+                                                  </div>
+                                            </div>
+                                                <img src="img/items/item3.png" class="item-img item-img3" alt="">
+                                            </div>
+                                        </div>                                      
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="item-card ">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                             <div>
+                                                <h4 class="mb-2 fw-bolder" style="margin-top: -100px;">House Plant</h4>
+                                                <p class="mb-2 text-black-50">45000 MMK</p>
+                                                <div class="progress" style="width:200px;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+                                                  </div>
+                                            </div>
+                                                <img src="img/items/item4.png" class="item-img item-img4" alt="">
+                                            </div>
+                                        </div>                                      
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="item-card ">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                             <div>
+                                                <h4 class="mb-2 fw-bolder" style="margin-top: -100px;">House Plant</h4>
+                                                <p class="mb-2 text-black-50">25000 MMK</p>
+                                                <div class="progress" style="width:200px;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                                  </div>
+                                            </div>
+                                                <img src="img/items/item5.png" class="item-img item-img5" alt="">
+                                            </div>
+                                        </div>                                      
+                                    </div>
+                                    </div>
+                                  </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-5 mb-4 ">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div>
+                                    <div class="">
+                                        <h4 class="ov">Order and Place</h4>
+                                        <div class="">
+                                        </div>
+                                        <canvas id="op"  height="200"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-7 mb-4 mb-xl-4">
+                        <div class="card table-content">
+                            <div class="">
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                       <tr>
+                                          <th>Name</th>
+                                          <th>Company</th>
+                                          <th>Start Date</th>
+                                          <th>Status</th>
+                                          <th>Amount</th>
+                                          <th>Action</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>Michael Austin</td>
+                                          <td>ABC Fintech LTD.</td>
+                                          <td>Jan 1,2019</td>
+                                          <td><span class="badge rounded-pill bg-danger">Close</span></td>
+                                          <td>$ 1000.00</td>
+                                          <td class="center-align"><a href="#" style="text-decoration:none; align-items:center"><i class="feather-trash-2 text-danger"></i></a></td>
+                                       </tr>
+                                       <tr>
+                                          <td>Aldin Rakić</td>
+                                          <td>ACME Pvt LTD.</td>
+                                          <td>Jan 10,2019</td>
+                                          <td><span class="badge rounded-pill bg-success">Open</span></td>
+                                          <td>$ 3000.00</td>
+                                          <td class="center-align"><a href="#" style="text-decoration:none; align-items:center"><i class="feather-trash-2 text-danger"></i></a></td>
+                                       </tr>
+                                       <tr>
+                                          <td>İris Yılmaz</td>
+                                          <td>Collboy Tech LTD.</td>
+                                          <td>Jan 12,2019</td>
+                                          <td><span class="badge rounded-pill bg-success">Open</span></td>
+                                          <td>$ 2000.00</td>
+                                          <td class="center-align"><a href="#" style="text-decoration:none; align-items:center"><i class="feather-trash-2 text-danger"></i></a></td>
+                                       </tr>
+                                       <tr>
+                                          <td>Lidia Livescu</td>
+                                          <td>My Fintech LTD.</td>
+                                          <td>Jan 14,2019</td>
+                                          <td><span class="badge rounded-pill bg-danger">Close</span></td>
+                                          <td>$ 1100.00</td>
+                                          <td class="center-align"><a href="#" style="text-decoration:none; align-items:center"><i class="feather-trash-2 text-danger"></i></a></td>
+                                       </tr>
+                                       <tr>
+                                        <td>İris Yılmaz</td>
+                                        <td>Collboy Tech LTD.</td>
+                                        <td>Jan 12,2019</td>
+                                        <td><span class="badge rounded-pill bg-success">Open</span></td>
+                                        <td>$ 2000.00</td>
+                                        <td class="center-align"><a href="#" style="text-decoration:none; align-items:center"><i class="feather-trash-2 text-danger"></i></a></td>
+                                     </tr>
+                                     <tr>
+                                        <td>Lidia Livescu</td>
+                                        <td>My Fintech LTD.</td>
+                                        <td>Jan 14,2019</td>
+                                        <td><span class="badge rounded-pill bg-danger">Close</span></td>
+                                        <td>$ 1100.00</td>
+                                        <td class="center-align"><a href="#" style="text-decoration:none; align-items:center"><i class="feather-trash-2 text-danger"></i></a></td>
+                                     </tr>
+                                     <tr>
+                                        <td>İris Yılmaz</td>
+                                        <td>Collboy Tech LTD.</td>
+                                        <td>Jan 12,2019</td>
+                                        <td><span class="badge rounded-pill bg-success">Open</span></td>
+                                        <td>$ 2000.00</td>
+                                        <td class="center-align"><a href="#" style="text-decoration:none; align-items:center"><i class="feather-trash-2 text-danger"></i></a></td>
+                                     </tr>
+                                     <tr>
+                                        <td>Lidia Livescu</td>
+                                        <td>My Fintech LTD.</td>
+                                        <td>Jan 14,2019</td>
+                                        <td><span class="badge rounded-pill bg-danger">Close</span></td>
+                                        <td>$ 1100.00</td>
+                                        <td class="center-align"><a href="#" style="text-decoration:none; align-items:center"><i class="feather-trash-2 text-danger"></i></a></td>
+                                     </tr>
+                                    </tbody>
+                                 </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <!-- content-end-->
+            </div>
+        </div>
+    </section>
+
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="js/app.js"></script>
+<script src="vendor/counter_up/counter_up.js"></script>
+<script src="vendor/way_point/jquery.waypoints.js"></script>
+<script src="vendor/chart/Chart.min.js"></script>
+<script src="js/dashboard.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script> -->
+
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2"> -->
+</head>
+<body>
+    <section class="main container-fluid">
+        <div class="row">
+                            <!-- navbar -->
+            <div class="col-12 col-lg-3 col-xl-2 vh-100 aside">
+                <div class=" py-3 mt-3 d-flex justify-content-between align-items-center brand-logo">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span><i class="feather-moon bg-secondary rounded-circle h4"></i></span>
+                        <span style="margin-left: 5px;">
+                            <p class="mb-0 h4">MOON</p>
+                        </span>
+                    </div>
+                    <button class="close-btn btn btn-light d-block d-lg-none">
+                        <i class="feather-x text-secondary"></i>
+                    </button>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li class="nav-item">
+                           <a href="dashboard.html" class="nav-item-link">
+                               <span>
+                                <i class="feather-home"></i>
+                                Dashboard
+                               </span>
+                           </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link active">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                            <a class="nav-item-link">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item Link
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                            <!-- navbar -->
+            <div class="col-12 col-lg-9 col-xl-10 vh-100 py-3 content">
+                <div class="row header mb-4">
+                    <div class="col-12 ">
+                        <div class="p-2 bg-primary rounded d-flex justify-content-between align-item-center">
+                            <button class="show-btn btn btn-primary btn-link d-block d-lg-none">
+                                <i class="feather-menu text-light"></i>
+                            </button>
+                            <form action="" method="post" class="d-none d-lg-inline" style="margin-block: auto;">
+                                <div class="form d-flex">
+                                    <input type="text" class="form-control"  id="">
+                                    <button class="btn btn-light btn-search">
+                                        <i class="feather-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/user/avatar2.jpg" alt="" class="user-img">
+                                        Diana
+                                    </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-start -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0">
+                                      <li class="breadcrumb-item"><a href="dashboard.html"><i class="feather-home"></i></a></li>
+                                      <li class="breadcrumb-item active" aria-current="page">Add-Item</li>
+                                    </ol>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                   <h4 class="mb-0"><i class="feather-plus-circle"></i> Add items</h4>
+                                    <a href="" class="btn btn-outline-secondary"><i class="feather-list"></i></a>
+                                </div>
+                                <hr>
+                                <form action="" method="post" >
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group mb-2">
+                                                <label for="photo">Add photo</label>
+                                                <i class="feather-alert-circle"  type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="only png & jpg"></i>
+                                                <input type="file" name="photo" id="photo" class="form-control p-1" required >
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="name">Item Name</label>
+                                                <input type="text" id="name" name="name" required class="form-control">
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="type">Item Type</label>
+                                                <select name="type" id="type" class="form-control custom-select">
+                                                    <option value="0" selected>Select the items</option>
+                                                    <option value="1">electronic</option>
+                                                    <option value="2">decorative</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="cate">Category</label>
+                                                <select name="type" id="cate" class="form-control custom-select">
+                                                    <option value="" selected disabled>"Select the Category"</option>
+                                                    
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="sub">Sub Category</label>
+                                                <select name="type" id="sub" class="form-control custom-select">
+                                                    <option value="" selected disabled>"Select the Sub-Category"</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="quantity">Quantity</label>
+                                                        <input type="text" id="quantity" name="name" required class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="unit">Units</label>
+                                                        <select name="type" id="unit" class="form-control custom-select">
+                                                            <option value="0">"ကုန်စို"</option>
+                                                            <option value="0">"ကုန်ခြောက်"</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <label for="price">Price</label>
+                                                <input type="number" id="price" required class="form-control">
+                                            </div>
+                                                <div class="form-group mb-2">
+                                                    <label for="des">Description</label>
+                                                    <textarea name="" id="des"  rows="7" class="form-control">hello</textarea>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <button class="btn btn-primary float-end" id="submit">upload</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <!-- content-end-->
+            </div>
+        </div>
+    </section>
+
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="js/app.js"></script>
+<script src="vendor/counter_up/counter_up.js"></script>
+<script src="vendor/way_point/jquery.waypoints.js"></script>
+
+<script src="vendor/chart/Chart.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script> -->
+
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+</body>
+<script>
+    let category = ["phone","plants","laptop"];
+    let sub =[
+        {name:"apple",category_id:0},
+        {name:"googlepixel",category_id:0},
+        {name:"huawei",category_id:0},
+        {name:"samsung",category_id:0},
+        {name:"Mi",category_id:0},
+        {name:"oppo",category_id:0},
+        {name:"potted faux",category_id:1},
+        {name:"Bonsai tree",category_id:1},
+        {name:"Monstera deliciosa",category_id:1},
+        {name:"House plants",category_id:1},
+        {name:"macbook",category_id:2},
+        {name:"matebook",category_id:2},
+        {name:"galaxybook",category_id:2},
+        {name:"Hp",category_id:2},
+        {name:"Acer",category_id:2},
+    ]
+    // category.map(function(el,index){
+    //     $("#cate").append(`<option value="${index}">${el}</optiob>`)
+    // })
+    // sub.map(function(el,index){
+    //     $("#sub").append(`<option value="${index}" data-category="${el.category_id}">${el.name}</optiob>`)
+
+    // })
+    // $("#cate").on("change",function(){
+    //     let current = $(this).val();
+    //     $("#sub option").hide();
+    //     $(`[data-category=${current}]`).show(); 
+    // })
+
+
+    category.map(function(el,index){
+        $("#cate").append(`<option value="${index}">${el}</option>`)
+     })
+     sub.map(function(el,index){
+         $("#sub").append(`<option value="${index}" data-category="${el.category_id}">${el.name}</option>`)
+     })
+     $("#cate").on("change",function(el,index){
+         let current = $(this).val();
+             $("#sub option").hide();
+             $(`[data-category="${current}"]`).show();
+     })
+</script>
+</html>
+
+
+
+
+

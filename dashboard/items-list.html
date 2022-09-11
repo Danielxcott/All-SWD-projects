@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="vendor/data_table/datatables.min.css">
+    <link rel="stylesheet" href="vendor/data_table/DataTables-1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2"> -->
+</head>
+<body>
+    <section class="main container-fluid">
+        <div class="row">
+                            <!-- navbar -->
+            <div class="col-12 col-lg-3 col-xl-2 vh-100 aside">
+                <div class=" py-3 mt-3 d-flex justify-content-between align-items-center  brand-logo">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span><i class="feather-moon bg-secondary rounded-circle h4"></i></span>
+                        <span style="margin-left: 5px;">
+                            <p class="mb-0 h4">MOON</p>
+                        </span>
+                    </div>
+                    <button class="close-btn btn btn-light d-block d-lg-none">
+                        <i class="feather-x text-secondary"></i>
+                    </button>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li class="nav-item">
+                           <a href="dashboard.html" class="nav-item-link">
+                               <span>
+                                <i class="feather-home"></i>
+                                Dashboard
+                               </span>
+                           </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                            <a class="nav-item-link">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item Link
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="#" class="nav-item-link active">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                        <li class="nav-divider"></li>
+                        <li class="nav-title">Manage item</li>
+                        <li class="nav-item">
+                            <a href="add-item.html" class="nav-item-link">
+                                <span>
+                                    <i class="feather-plus-circle"></i>
+                                    Add Item
+                                </span>
+                            </a>
+                            <a href="items-list.html" class="nav-item-link ">
+                                <span>
+                                    <i class="feather-list"></i>
+                                    Item list
+                                </span>
+                                <Span class="badge badge-pill bg-light shadow-sm text-black-50">12</Span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+                            <!-- navbar -->
+            <div class="col-12 col-lg-9 col-xl-10 vh-100 py-3 content">
+                <div class="row header mb-4">
+                    <div class="col-12 ">
+                        <div class="p-2 bg-primary rounded d-flex justify-content-between align-item-center">
+                            <button class="show-btn btn btn-primary btn-link d-block d-lg-none">
+                                <i class="feather-menu text-light"></i>
+                            </button>
+                            <form action="" method="post" class="d-none d-lg-inline" style="margin-block: auto;">
+                                <div class="form d-flex">
+                                    <input type="text" class="form-control"  id="">
+                                    <button class="btn btn-light btn-search">
+                                        <i class="feather-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/user/avatar2.jpg" alt="" class="user-img">
+                                        Diana
+                                    </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                  <li><a class="dropdown-item active" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-start -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0">
+                                      <li class="breadcrumb-item"><a href="dashboard.html"><i class="feather-home"></i></a></li>
+                                      <li class="breadcrumb-item"><a href="add-item.html">Add-Item</a></li>
+                                      <li class="breadcrumb-item active" aria-current="page">Item-List</li>
+                                    </ol>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                   <h4 class="mb-0"><i class="feather-plus-circle"></i>Items-List</h4>
+                                   <div>
+                                    <button class="btn btn-outline-secondary fullscreen-btn"><i class="feather-maximize-2"></i></button>
+                                    <a href="add-item.html" class="btn btn-outline-secondary"><i class="feather-list"></i></a>
+                                   </div>
+                                </div>
+                                <hr>
+                                <div class="overflow-scroll">
+                                    <table id="list" class="table table-striped" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                        
+                                                <th>ItemName</th>
+                                                <th>ItemType</th>
+                                                <th>Category</th>
+                                                <th>Sub-Category</th>
+                                                <th>Quantity</th>
+                                                <th>Units</th>
+                                                <th>Price</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody">
+                                            <tr>
+                                             
+                                                <td>House plants</td>
+                                                <td>decorative</td>
+                                                <td>Plants</td>
+                                                <td>House plant</td>
+                                                <td>2</td>
+                                                <td>1</td>
+                                                <td>23000MMK</td>
+                                                <td>get this and decorate your house with house plants! </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </tfoot> -->
+                                    </table>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <!-- content-end-->
+            </div>
+        </div>
+    </section>
+
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="js/app.js"></script>
+<script src="vendor/counter_up/counter_up.js"></script>
+<script src="vendor/way_point/jquery.waypoints.js"></script>
+<script src="vendor/chart/Chart.min.js"></script>
+<script src="vendor/data_table/dataTables.min.js"></script>
+<script src="vendor/data_table/DataTables-1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script> -->
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+</body>
+</html>
