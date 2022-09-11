@@ -1,0 +1,30 @@
+.product{
+    border: none !important;
+}
+.product img{
+    height: 150px;
+    width: auto;
+    transition: 0.5s;
+    margin-bottom: -50px;
+    margin-left: 20px;
+}
+.product:hover img{
+    transform: scale(1.03);
+    transform: rotate(-10deg);
+}
+.product .card-title{
+    margin-top: 50px;
+}
+.img-cart{
+    height: 50px;
+}
+.overflow-scroll{
+    overflow: scroll;
+}
+.bottom-0{
+    bottom: 0;
+}
+.top-0{
+    top: 0;
+    z-index: 3;
+}
